@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWrite Pro | A Blog for Technical Writers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Basic Reset & Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        .section {
+            padding: 3rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Cards for Tools/Resources */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Blog Preview */
+        .blog-preview {
+            margin: 2rem 0;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        .subsection {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .subsection h3 {
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        .template-download {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechWrite Pro</h1>
+        <p>Empowering Future Technical Writers</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#core">Core Concepts</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#genres">Technical Genres</a></li>
+            <li><a href="#design">Document Design</a></li>
+            <li><a href="#audience">Audience</a></li>
+            <li><a href="#social">Social Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h2>Welcome to TechWrite Pro</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Latest Trends</h3>
+                <p>Explore AI tools, minimalist design, and agile documentation.</p>
+            </div>
+            <div class="card">
+                <h3>Tool of the Month</h3>
+                <p>MadCap Flare: Deep dive into advanced features.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Concepts Section -->
+    <section id="core" class="section">
+        <h2>Core Concepts</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3><i class="fas fa-users"></i> Audience Awareness</h3>
+                <p>Learn to build user personas and adapt content for clinicians vs. patients.</p>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-palette"></i> Document Design</h3>
+                <p>WCAG standards and interactive redesign examples.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="section">
+        <h2>Tools & Technologies</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>MadCap Flare vs. FrameMaker</h3>
+                <p>Comparison guide for technical writing software.</p>
+            </div>
+            <div class="card">
+                <h3>GitHub for Collaboration</h3>
+                <p>Version control best practices for writers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <h2>Latest Posts</h2>
+        <div class="blog-preview">
+            <div class="card">
+                <h3>AI in Technical Writing: Friend or Foe?</h3>
+                <p>Exploring ChatGPT, Grammarly, and ethical implications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Genres Section -->
+    <section id="genres" class="section">
+        <h2>Technical Writing Genres</h2>
+        <div class="subsection">
+            <h3>API Documentation</h3>
+            <p><strong>Best Practices:</strong> Use tools like Swagger or Postman for interactive examples.</p>
+            <div class="template-download">
+                <p><i class="fas fa-download"></i> Download our <a href="#">API Documentation Template</a></p>
+            </div>
+        </div>
+
+        <div class="subsection">
+            <h3>Standard Operating Procedures (SOPs)</h3>
+            <p><strong>Case Study:</strong> How a healthcare startup reduced errors by 40% with visual SOPs.</p>
+            <img src="sop-example.png" alt="SOP workflow diagram" style="width:100%; max-width:600px;">
+        </div>
+    </section>
+
+    <!-- Document Design Section -->
+    <section id="design" class="section">
+        <h2>Document Design Principles</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3><i class="fas fa-universal-access"></i> Accessibility</h3>
+                <ul>
+                    <li>WCAG 2.1 compliance checklist</li>
+                    <li>Testing tools: WAVE, AXE</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3><i class="fas fa-table"></i> Formatting</h3>
+                <p>When to use tables vs. lists:</p>
+                <table>
+                    <tr><th>Tables</th><th>Lists</th></tr>
+                    <tr><td>Comparison data</td><td>Step-by-step instructions</td></tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Awareness Section -->
+    <section id="audience" class="section">
+        <h2>Audience Analysis</h2>
+        <div class="subsection">
+            <h3>User Persona Template</h3>
+            <p><strong>Elements to include:</strong></p>
+            <ol>
+                <li>Job role & responsibilities</li>
+                <li>Technical proficiency level</li>
+                <li>Pain points</li>
+            </ol>
+            <button>Download Persona Worksheet</button>
+        </div>
+
+        <div class="subsection">
+            <h3>Case Study: B2B vs B2C Documentation</h3>
+            <p>How language and structure differ:</p>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>B2B (Developers)</h4>
+                    <p>Jargon acceptable, focus on integration details</p>
+                </div>
+                <div class="card">
+                    <h4>B2C (End Users)</h4>
+                    <p>Plain language, visual troubleshooting guides</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="section">
+        <h2>Social Media for Technical Writers</h2>
+        <div class="card">
+            <h3>LinkedIn Optimization</h3>
+            <ul>
+                <li>Use keywords: "API Documentation" | "UX Writing"</li>
+                <li>Showcase portfolio pieces in Featured section</li>
+            </ul>
+        </div>
+
+        <div class="subsection">
+            <h3>Building a Twitter Presence</h3>
+            <p><strong>Content Ideas:</strong></p>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>Thread Example:</h4>
+                    <p>"5 Lesser-Known Markdown Tips 🚀<br>
+                    1. Collapsible sections with <details> tag<br>
+                    2. Add emojis via :shortcode:..."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <div class="contact-form">
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TechWrite Pro.</p>
+        <p>Follow us: 
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </p>
+    </footer>
+</body>
+</html>
